@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customer Feedback | EcoGlow Furnishings</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="scripts/main.js" defer></script>
+  </head>
+  <body data-page="feedback">
+    <header>
+      <div class="header-inner">
+        <div class="branding">
+          <img src="assets/logo.svg" alt="EcoGlow Furnishings logo" />
+          <span>EcoGlow Furnishings</span>
+        </div>
+        <nav>
+          <ul>
+            <li><a data-page="home" href="index.html">Home</a></li>
+            <li><a data-page="proposal" href="proposal.html">Proposal</a></li>
+            <li><a data-page="about" href="about.html">About</a></li>
+            <li><a data-page="products" href="products.html">Products</a></li>
+            <li><a data-page="services" href="services.html">Services</a></li>
+            <li><a data-page="blogs" href="blogs.html">Blogs & Social</a></li>
+            <li><a data-page="contact" href="contact.html">Contact</a></li>
+            <li><a data-page="feedback" href="feedback.html">Feedback</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h1>Customer Feedback Form</h1>
+        <p>
+          Help us improve by sharing your experience. Once submitted, you will be
+          redirected to a confirmation page.
+        </p>
+      </section>
+
+      <section>
+        <form class="feedback-form" action="feedback-success.html" method="get">
+          <fieldset>
+            <legend>Personal Details</legend>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </fieldset>
+
+          <fieldset>
+            <legend>Experience</legend>
+            <p>Rate Our Service</p>
+            <label>
+              <input type="radio" name="rating" value="excellent" required />
+              Excellent
+            </label>
+            <label>
+              <input type="radio" name="rating" value="good" />
+              Good
+            </label>
+            <label>
+              <input type="radio" name="rating" value="average" />
+              Average
+            </label>
+            <label>
+              <input type="radio" name="rating" value="poor" />
+              Poor
+            </label>
+
+            <p>Services Used</p>
+            <label>
+              <input type="checkbox" name="services[]" value="product" />
+              Product Purchase
+            </label>
+            <label>
+              <input type="checkbox" name="services[]" value="delivery" />
+              Delivery
+            </label>
+            <label>
+              <input type="checkbox" name="services[]" value="support" />
+              Support
+            </label>
+            <label>
+              <input type="checkbox" name="services[]" value="other" />
+              Other
+            </label>
+
+            <label for="feedback-type">Feedback Type</label>
+            <select id="feedback-type" name="feedbackType" required>
+              <option value="">Select an option</option>
+              <option value="suggestion">Suggestion</option>
+              <option value="complaint">Complaint</option>
+              <option value="appreciation">Appreciation</option>
+            </select>
+          </fieldset>
+
+          <fieldset>
+            <legend>Comments</legend>
+            <label for="comments">Comments</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+          </fieldset>
+
+          <div class="form-actions">
+            <input type="submit" value="Submit" />
+            <input type="reset" value="Reset" />
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-inner">
+        <p>Thank you for helping us build a better service.</p>
+      </div>
+    </footer>
+  </body>
+</html>
