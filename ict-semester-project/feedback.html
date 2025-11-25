@@ -9,10 +9,13 @@
   </head>
   <body data-page="feedback">
     <header>
-      <div class="header-inner">
-        <div class="branding">
+      <div class="wrapper">
+        <div class="brand-line">
           <img src="assets/logo.svg" alt="EcoGlow Furnishings logo" />
-          <span>EcoGlow Furnishings</span>
+          <div>
+            <strong>EcoGlow Furnishings</strong><br />
+            <small>Introduction to ICT · Fall 2025</small>
+          </div>
         </div>
         <nav>
           <ul>
@@ -30,89 +33,85 @@
     </header>
 
     <main>
-      <section>
-        <h1>Customer Feedback Form</h1>
-        <p>
-          Help us improve by sharing your experience. Once submitted, you will be
-          redirected to a confirmation page.
-        </p>
-      </section>
+      <div class="wrapper">
+        <section>
+          <h1>Customer Feedback Form</h1>
+          <p>Fill in the form and it will open a simple thank-you page.</p>
+        </section>
 
-      <section>
-        <form class="feedback-form" action="feedback-success.html" method="get">
-          <fieldset>
-            <legend>Personal Details</legend>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required />
+        <section>
+          <form action="feedback-success.html" method="get">
+            <fieldset>
+              <legend>Personal Details</legend>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
 
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required />
-          </fieldset>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </fieldset>
 
-          <fieldset>
-            <legend>Experience</legend>
-            <p>Rate Our Service</p>
-            <label>
-              <input type="radio" name="rating" value="excellent" required />
-              Excellent
-            </label>
-            <label>
-              <input type="radio" name="rating" value="good" />
-              Good
-            </label>
-            <label>
-              <input type="radio" name="rating" value="average" />
-              Average
-            </label>
-            <label>
-              <input type="radio" name="rating" value="poor" />
-              Poor
-            </label>
+            <fieldset>
+              <legend>Experience</legend>
+              <p>Rate Our Service</p>
+              <label>
+                <input type="radio" name="rating" value="excellent" required />
+                Excellent
+              </label>
+              <label>
+                <input type="radio" name="rating" value="good" /> Good
+              </label>
+              <label>
+                <input type="radio" name="rating" value="average" /> Average
+              </label>
+              <label>
+                <input type="radio" name="rating" value="poor" /> Poor
+              </label>
 
-            <p>Services Used</p>
-            <label>
-              <input type="checkbox" name="services[]" value="product" />
-              Product Purchase
-            </label>
-            <label>
-              <input type="checkbox" name="services[]" value="delivery" />
-              Delivery
-            </label>
-            <label>
-              <input type="checkbox" name="services[]" value="support" />
-              Support
-            </label>
-            <label>
-              <input type="checkbox" name="services[]" value="other" />
-              Other
-            </label>
+              <p>Services Used</p>
+              <label>
+                <input type="checkbox" name="services[]" value="product" />
+                Product Purchase
+              </label>
+              <label>
+                <input type="checkbox" name="services[]" value="delivery" />
+                Delivery
+              </label>
+              <label>
+                <input type="checkbox" name="services[]" value="support" />
+                Support
+              </label>
+              <label>
+                <input type="checkbox" name="services[]" value="other" />
+                Other
+              </label>
 
-            <label for="feedback-type">Feedback Type</label>
-            <select id="feedback-type" name="feedbackType" required>
-              <option value="">Select an option</option>
-              <option value="suggestion">Suggestion</option>
-              <option value="complaint">Complaint</option>
-              <option value="appreciation">Appreciation</option>
-            </select>
-          </fieldset>
+              <label for="feedback-type">Feedback Type</label>
+              <select id="feedback-type" name="feedbackType" required>
+                <option value="">Choose one</option>
+                <option value="suggestion">Suggestion</option>
+                <option value="complaint">Complaint</option>
+                <option value="appreciation">Appreciation</option>
+              </select>
+            </fieldset>
 
-          <fieldset>
-            <legend>Comments</legend>
-            <label for="comments">Comments</label>
-            <textarea id="comments" name="comments" rows="4"></textarea>
-          </fieldset>
+            <fieldset>
+              <legend>Comments</legend>
+              <label for="comments">Comments</label>
+              <textarea id="comments" name="comments" rows="4"></textarea>
+            </fieldset>
 
-          <div class="form-actions">
-            <input type="submit" value="Submit" />
-            <input type="reset" value="Reset" />
-          </div>
-        </form>
-      </section>
+            <div class="form-actions">
+              <input type="submit" value="Submit" />
+              <input type="reset" value="Reset" />
+            </div>
+          </form>
+        </section>
+      </div>
     </main>
 
     <footer>
-      <div class="footer-inner">
-        <p>Thank you for helping us build a better service.</p>
+      <div class="wrapper">
+        <p>Thanks for the feedback!</p>
       </div>
     </footer>
   </body>
