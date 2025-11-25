@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products | TRENDCART</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <div class="brand-line">
+          <img src="assets/logo.svg" alt="TRENDCART logo" />
+          <div>
+            <strong>TRENDCART</strong><br />
+          </div>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a class="active" href="products.html">Products</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="blogs.html">Blogs & Social</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="feedback.html" target="_blank">Feedback</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="wrapper">
+        <section>
+          <h1>Product Overview</h1>
+          <p>
+            Each product is a demo item for the class project. Prices are sample
+            values in PKR. We still keep row span and column span to practice
+            table formatting.
+          </p>
+        </section>
+
+        <section>
+          <h2>5 × 5 Launch Table</h2>
+          <table class="table-simple">
+            <caption>TrendCart Catalog</caption>
+            <thead>
+              <tr>
+                <th>SKU</th>
+                <th>Category</th>
+                <th>Feature</th>
+                <th>Price (PKR)</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>TC-101</td>
+                <td rowspan="2">Living Room</td>
+                <td>Modular bamboo sofa</td>
+                <td>105,000</td>
+                <td>Custom</td>
+              </tr>
+              <tr>
+                <td>TC-105</td>
+                <td>Table with wireless charging</td>
+                <td colspan="2">42,000 (bundle)</td>
+              </tr>
+              <tr>
+                <td>TC-204</td>
+                <td>Lighting</td>
+                <td>Pendant kit with app control</td>
+                <td>28,500</td>
+                <td>In Stock</td>
+              </tr>
+              <tr>
+                <td>TC-305</td>
+                <td rowspan="2">Workspace</td>
+                <td>Standing desk recycled frame</td>
+                <td>88,000</td>
+                <td>Limited</td>
+              </tr>
+              <tr>
+                <td>TC-309</td>
+                <td colspan="2">Chair + lamp combo (65,000)</td>
+                <td>Pre-order</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section>
+            <h2>Sample Products</h2>
+            <p>Below are a few images that represent the pieces we want to sell.</p>
+            <div class="product-gallery">
+                <figure>
+                    <img src="assets/product1.png"
+                         alt="Bamboo sofa set with cushions" />
+                    <figcaption>Urban Bamboo Sofa · PKR 105,000</figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/product2.png"
+                         alt="Compact study desk made of recycled wood" />
+                    <figcaption>Compact Study Desk · PKR 88,000</figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/product3.png"
+                         alt="Wooden dining table set" />
+                    <figcaption>Dining Duo Set · PKR 65,000</figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/product1.png"
+                         alt="Smart pendant lights glowing warmly" />
+                    <figcaption>GlowSmart Lighting Kit · PKR 28,500</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section>
+          <h2>Bundles Explained</h2>
+          <ul class="list-simple">
+            <li>Starter Room Pack: sofa, rug, two lamps.</li>
+            <li>Study Pack: desk, chair, task light.</li>
+            <li>Glow Pack: five LED bulbs plus smart plug.</li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="wrapper">
+        <small>© 2025 · TrendCart.</small>
+      </div>
+    </footer>
+  </body>
+</html>
